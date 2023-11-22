@@ -1,0 +1,68 @@
+.myTable table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.myTable thead th {
+  position: sticky;
+  top: 0;
+}
+.myTable th, .myTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.myTable th {
+  background-color: #f2f2f2;
+}
+
+.myTable tbody tr:nth-child(odd).green {
+  background-color: rgb(231, 247, 231);
+}
+
+.myTable tbody tr:nth-child(even).green {
+  background-color: rgb(217, 235, 217);
+}
+
+.myTable tbody tr:nth-child(odd).yellow {
+  background-color: rgb(247, 247, 236);
+}
+
+.myTable tbody tr:nth-child(even).yellow {
+  background-color: rgb(243, 243, 215);
+}
+
+.myTable tbody tr:nth-child(odd).red {  
+  background-color: rgb(245, 218, 213);
+}
+
+.myTable tbody tr:nth-child(even).red {
+  background-color: rgb(243, 205, 199);
+
+}
+
+
+
+.myTable {
+  /* padding-top didn't work...? */
+  margin-top: 10px;
+  height: 500px;
+  max-height: 650px;
+  overflow-y: scroll;
+  width: 98%;
+  /* overflow: auto; */
+  /* padding: 0 10px; */
+}
+
+.myTable::-webkit-scrollbar {
+  width: 12px;
+}
+
+.myTable::-webkit-scrollbar-thumb {
+  background-color: #e60f0f00;
+  border: 2px solid #616161;
+  border-radius: 8px;
+}
+
